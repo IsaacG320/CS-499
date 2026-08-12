@@ -1,147 +1,443 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Isaac Garcia | CS 499 ePortfolio</title>
+    <title>Isaac Garcia | CS 499 ePortfolio</title>
 
-<style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f6f8;
-    margin:0;
-    color:#333;
-}
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            margin: 0;
+            color: #333;
+            line-height: 1.6;
+        }
 
-header{
-    background:#0b3d91;
-    color:white;
-    padding:40px;
-    text-align:center;
-}
+        header {
+            background: #0b3d91;
+            color: white;
+            padding: 45px 20px;
+            text-align: center;
+        }
 
-header h1{
-    margin:0;
-    font-size:42px;
-}
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
 
-header p{
-    font-size:20px;
-    margin-top:10px;
-}
+        header p {
+            font-size: 20px;
+            margin-top: 10px;
+        }
 
-.container{
-    width:85%;
-    max-width:1000px;
-    margin:40px auto;
-}
+        nav {
+            background: #082f70;
+            text-align: center;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-.card{
-    background:white;
-    padding:30px;
-    margin-bottom:25px;
-    border-radius:10px;
-    box-shadow:0 3px 8px rgba(0,0,0,.15);
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-weight: bold;
+        }
 
-h2{
-    color:#0b3d91;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-ul{
-    line-height:1.8;
-}
+        .container {
+            width: 85%;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
 
-footer{
-    background:#0b3d91;
-    color:white;
-    text-align:center;
-    padding:20px;
-    margin-top:40px;
-}
+        .card {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
+        }
 
-</style>
+        h2 {
+            color: #0b3d91;
+            margin-top: 0;
+        }
 
+        h3 {
+            color: #174ea6;
+            margin-top: 25px;
+        }
+
+        ul {
+            line-height: 1.8;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0b3d91;
+            color: white;
+            padding: 11px 18px;
+            margin: 8px 8px 8px 0;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #082f70;
+        }
+
+        .project-info {
+            background: #eef3fb;
+            padding: 18px;
+            border-left: 5px solid #0b3d91;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #0b3d91;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 750px) {
+            header h1 {
+                font-size: 34px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px 8px;
+            }
+
+            .container {
+                width: 92%;
+            }
+
+            .card {
+                padding: 22px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-
-<h1>Isaac Garcia</h1>
-
-<p>CS 499 Computer Science Capstone ePortfolio</p>
-
+    <h1>Isaac Garcia</h1>
+    <p>CS 499 Computer Science Capstone ePortfolio</p>
 </header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#self-assessment">Self-Assessment</a>
+    <a href="#code-review">Code Review</a>
+    <a href="#software-engineering">Software Engineering</a>
+    <a href="#algorithms">Algorithms</a>
+    <a href="#databases">Databases</a>
+</nav>
 
 <div class="container">
 
-<div class="card">
+    <section id="home" class="card">
+        <h2>Welcome</h2>
 
-<h2>Welcome</h2>
+        <p>
+            Welcome to my Computer Science ePortfolio. This portfolio represents the
+            knowledge, technical skills, and professional growth I developed throughout
+            the Bachelor of Science in Computer Science program at Southern New Hampshire
+            University.
+        </p>
 
-<p>
-Welcome to my Computer Science ePortfolio. This website highlights the projects, artifact enhancements, and professional growth I have developed throughout the CS 499 Computer Science Capstone course.
-</p>
+        <p>
+            The main artifact presented in this portfolio is a Weight Tracking Android
+            application that I originally developed in CS 360 Mobile Architecture and
+            Programming. During the CS 499 Computer Science Capstone, I enhanced this
+            application in software design and engineering, algorithms and data structures,
+            and database design.
+        </p>
 
-</div>
+        <div class="project-info">
+            <strong>Primary Technologies:</strong>
+            Java, Android Studio, SQLite, XML, Object-Oriented Programming,
+            Algorithms, Data Structures, and Database Management
+        </div>
+    </section>
 
-<div class="card">
 
-<h2>About Me</h2>
+    <section id="self-assessment" class="card">
 
-<p>
-I am a Computer Science student at Southern New Hampshire University with an interest in software development and data analytics. Throughout my degree, I have gained experience in Java programming, Android application development, databases, algorithms, and software engineering. This ePortfolio demonstrates the knowledge and technical skills I have developed during my program.
-</p>
+        <h2>Professional Self-Assessment</h2>
 
-</div>
+        <p>
+            Completing the Computer Science program has helped me develop a stronger
+            understanding of how software is designed, developed, tested, and improved.
+            Throughout the program, I gained experience with programming, software
+            engineering, databases, algorithms, data structures, security, web development,
+            and mobile applications. Earlier in my coursework, I was often focused mainly
+            on making sure a program worked correctly. As I progressed, I learned to
+            consider other important factors such as code organization, efficiency,
+            usability, security, and maintainability.
+        </p>
 
-<div class="card">
+        <p>
+            My coursework also helped shape my professional goals. I am interested in
+            pursuing opportunities in software development or data-related fields because
+            I enjoy building applications and using data to solve problems. Throughout the
+            program, I worked with technologies such as Java, Python, SQL, SQLite, HTML,
+            CSS, JavaScript, and Android Studio. Learning different technologies has made
+            me more comfortable adapting to new tools instead of depending on one
+            programming language or development environment.
+        </p>
 
-<h2>Capstone Project</h2>
+        <p>
+            Another important part of my development has been learning how collaboration
+            and communication affect the success of a technical project. Through
+            discussions, project requirements, peer interactions, and instructor feedback,
+            I learned to consider perspectives beyond my own. Collaboration involves
+            listening to feedback, explaining decisions, considering user and stakeholder
+            needs, and being willing to change an approach when another solution provides
+            better results.
+        </p>
 
-<p>
-My capstone project focuses on enhancing a Weight Tracking App originally developed in CS 360 Mobile Architecture and Programming. The application is built using Java, Android Studio, and SQLite. During this course I will improve the software design, implement additional algorithms, and expand the database functionality to create a more complete and user-friendly application.
-</p>
+        <p>
+            My coursework also required me to communicate technical information through
+            written assignments, documentation, presentations, discussions, and project
+            work. These experiences taught me that technical knowledge needs to be
+            communicated differently depending on the audience. The code review for this
+            capstone is one example because I had to explain the existing application,
+            identify problems, and describe my planned improvements in a way that could
+            be understood without focusing only on source code.
+        </p>
 
-</div>
+        <p>
+            My understanding of data structures and algorithms also grew throughout the
+            program. I learned that solving a problem involves more than producing the
+            correct result. The way data is stored and processed affects the efficiency
+            and maintainability of a solution. Working with arrays, lists, collections,
+            and algorithms taught me to consider how information will be accessed and
+            modified before choosing an approach.
+        </p>
 
-<div class="card">
+        <p>
+            Software engineering and database development have also been important areas
+            of my education. Through software development projects, I gained experience
+            with object-oriented programming, modular design, user interfaces, testing,
+            debugging, validation, and documentation. Database coursework gave me
+            experience with SQL, relational databases, CRUD operations, relationships,
+            keys, data types, constraints, and queries.
+        </p>
 
-<h2>Skills Demonstrated</h2>
+        <p>
+            Security has become another important part of how I approach development. I
+            learned that security should be considered during the design process rather
+            than added after an application is finished. Input validation, access control,
+            data integrity, and defensive programming can reduce vulnerabilities and
+            protect information.
+        </p>
 
-<ul>
+        <p>
+            The artifact included in this portfolio brings these skills together. Using the
+            same Weight Tracking application for all three enhancement categories provides
+            a clear comparison between my earlier work and the skills I have developed
+            throughout the Computer Science program.
+        </p>
 
-<li>Java Programming</li>
+        <p>
+            Together, the original application and its three enhancements demonstrate my
+            growth in software engineering, algorithms and data structures, database
+            development, security, communication, and problem solving. Completing this
+            capstone has prepared me to enter the computer science field with a stronger
+            technical foundation and a better understanding of professional software
+            development practices.
+        </p>
 
-<li>Android Studio Development</li>
+    </section>
 
-<li>Object Oriented Programming</li>
 
-<li>Software Engineering</li>
+    <section id="code-review" class="card">
 
-<li>Algorithms and Data Structures</li>
+        <h2>Code Review</h2>
 
-<li>SQLite Database Management</li>
+        <p>
+            Before completing the three artifact enhancements, I performed a code review
+            of the original Weight Tracking application. The review explains the existing
+            functionality of the application, identifies areas that could be improved, and
+            describes the enhancements planned for software engineering, algorithms and
+            data structures, and databases.
+        </p>
 
-<li>User Interface Design</li>
+        <p>
+            The review also discusses areas such as code organization, efficiency,
+            functionality, security, validation, and maintainability.
+        </p>
 
-<li>Problem Solving</li>
+        <a class="button"
+           href="YOUR_YOUTUBE_LINK_HERE"
+           target="_blank">
+           Watch Code Review
+        </a>
 
-</ul>
+    </section>
 
-</div>
+
+    <section id="software-engineering" class="card">
+
+        <h2>Enhancement One: Software Design and Engineering</h2>
+
+        <p>
+            The first enhancement focused on improving the overall structure,
+            maintainability, usability, and reliability of the Weight Tracking application.
+        </p>
+
+        <h3>Key Improvements</h3>
+
+        <ul>
+            <li>Refactored large sections of code into smaller and more focused methods</li>
+            <li>Added stronger username and password validation</li>
+            <li>Improved weight entry validation</li>
+            <li>Added a date picker for consistent date entry</li>
+            <li>Reduced coupling between the RecyclerView adapter and database layer</li>
+            <li>Moved hardcoded interface text into Android string resources</li>
+            <li>Improved defensive programming and application reliability</li>
+        </ul>
+
+        <p>
+            These changes demonstrate my growth in object-oriented programming,
+            application architecture, user interface design, validation, and maintainable
+            software development.
+        </p>
+
+        <a class="button" href="FILES/MILESTONE_TWO_NARRATIVE.docx">
+            View Narrative
+        </a>
+
+        <a class="button" href="ARTIFACT_LINK_HERE">
+            View Enhanced Code
+        </a>
+
+    </section>
+
+
+    <section id="algorithms" class="card">
+
+        <h2>Enhancement Two: Algorithms and Data Structures</h2>
+
+        <p>
+            The second enhancement focused on improving how the application organizes
+            and processes stored weight information.
+        </p>
+
+        <h3>Key Improvements</h3>
+
+        <ul>
+            <li>Used an ArrayList to manage weight entries in memory</li>
+            <li>Sorted weight entries by date using Collections.sort and a comparator</li>
+            <li>Displayed the newest weight entries first</li>
+            <li>Calculated current, highest, lowest, and average weight</li>
+            <li>Calculated total weight change</li>
+            <li>Performed multiple statistical calculations in a single pass through the list</li>
+            <li>Changed weight values from strings to numerical double values</li>
+        </ul>
+
+        <p>
+            These improvements demonstrate my ability to select appropriate data
+            structures, implement algorithms, and consider efficiency when designing
+            computing solutions.
+        </p>
+
+        <a class="button" href="FILES/MILESTONE_THREE_NARRATIVE.docx">
+            View Narrative
+        </a>
+
+        <a class="button" href="ARTIFACT_LINK_HERE">
+            View Enhanced Code
+        </a>
+
+    </section>
+
+
+    <section id="databases" class="card">
+
+        <h2>Enhancement Three: Databases</h2>
+
+        <p>
+            The third enhancement focused on improving the SQLite database structure,
+            data integrity, user privacy, and database performance.
+        </p>
+
+        <h3>Key Improvements</h3>
+
+        <ul>
+            <li>Connected weight entries to individual user accounts using a user ID</li>
+            <li>Created a one-to-many relationship between users and weight records</li>
+            <li>Added foreign key support</li>
+            <li>Changed weight values to the SQLite REAL data type</li>
+            <li>Added database constraints to improve data integrity</li>
+            <li>Prevented duplicate weight entries for the same user and date</li>
+            <li>Updated CRUD operations to use the logged-in user's ID</li>
+            <li>Added an index to improve weight history queries</li>
+            <li>Improved separation and privacy of user information</li>
+        </ul>
+
+        <p>
+            These improvements demonstrate my knowledge of relational database design,
+            SQL operations, data integrity, performance, access control, and secure
+            application development.
+        </p>
+
+        <a class="button" href="FILES/MILESTONE_FOUR_NARRATIVE.docx">
+            View Narrative
+        </a>
+
+        <a class="button" href="ARTIFACT_LINK_HERE">
+            View Enhanced Code
+        </a>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Skills Demonstrated</h2>
+
+        <ul>
+            <li>Java Programming</li>
+            <li>Android Studio Development</li>
+            <li>Object-Oriented Programming</li>
+            <li>Software Engineering and Design</li>
+            <li>Algorithms and Data Structures</li>
+            <li>SQLite Database Management</li>
+            <li>Relational Database Design</li>
+            <li>User Interface Design</li>
+            <li>Input Validation and Defensive Programming</li>
+            <li>Data Integrity and Security</li>
+            <li>Technical Communication</li>
+            <li>Problem Solving</li>
+        </ul>
+
+    </section>
 
 </div>
 
 <footer>
-
-<p>© 2026 Isaac Garcia | CS 499 Computer Science Capstone</p>
-
+    <p>© 2026 Isaac Garcia | CS 499 Computer Science Capstone</p>
 </footer>
 
 </body>
-
 </html>
