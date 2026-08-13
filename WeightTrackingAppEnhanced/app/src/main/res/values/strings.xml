@@ -1,0 +1,40 @@
+<resources>
+
+    <!-- App Name -->
+    <string name="app_name">Weight Tracking App</string>
+
+    <!-- Main Screen -->
+    <string name="login_button">LOGIN</string>
+    <string name="create_account_button">CREATE ACCOUNT</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="app_title">Weight Tracking App</string>
+
+    <!-- Data Grid Screen -->
+    <string name="daily_weight_entries">Daily Weight Entries</string>
+    <string name="date_label">Date</string>
+    <string name="weight_label">Weight</string>
+    <string name="select_date_hint">Select a date</string>
+    <string name="enter_weight_hint">Enter weight in pounds</string>
+    <string name="add_entry_button">ADD ENTRY</string>
+    <string name="goal_notification_settings">GOAL NOTIFICATION SETTINGS</string>
+
+    <!-- Weight Statistics -->
+    <string name="weight_statistics_title">Weight Statistics</string>
+    <string name="current_weight_empty">Current Weight: --</string>
+    <string name="highest_weight_empty">Highest Weight: --</string>
+    <string name="lowest_weight_empty">Lowest Weight: --</string>
+    <string name="average_weight_empty">Average Weight: --</string>
+    <string name="weight_change_empty">Weight Change: --</string>
+
+    <!-- RecyclerView Row -->
+    <string name="delete_button">DELETE</string>
+    <string name="weight_value_format">%1$s lb</string>
+
+    <!-- SMS Screen -->
+    <string name="sms_title">Goal Weight Notifications</string>
+    <string name="sms_info">
+        This screen controls goal weight SMS notifications. The app must have permission to send SMS messages.
+    </string>
+
+</resources>
